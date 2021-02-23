@@ -1,0 +1,429 @@
+
+        /* *****************************RESPONSIVE***************************************************************** */
+/************
+1. 1920px
+************/
+
+@media only screen and (max-width: 1920px)
+{
+	
+}
+
+/************
+1. 1600px
+************/
+
+@media only screen and (max-width: 1600px)
+{
+	
+}
+
+/************
+2. 1440px
+************/
+
+@media only screen and (max-width: 1440px)
+{
+	
+}
+
+/************
+3. 1380px
+************/
+
+@media only screen and (max-width: 1380px)
+{
+	
+}
+
+/************
+3. 1280px
+************/
+
+@media only screen and (max-width: 1280px)
+{
+	
+}
+
+/************
+4. 1199px
+************/
+
+@media only screen and (max-width: 1199px)
+{
+   
+  
+    
+	
+}
+
+/************
+4. 1100px
+************/
+
+@media only screen and (max-width: 1100px)
+{
+	/* CARASOUL STYLE  */
+.carousel-item .main-title{
+    
+    font-size: 60px;
+    
+    top: 22%;
+    left:12%;
+    line-height: 150px;
+    
+}
+.carousel-item .main-title span {
+    
+    top: 50%;
+}
+.product_name_salary{
+    
+    top: 70%;
+    left: 10%;
+    
+  
+}
+.salary{
+    padding-right: 80px;
+    
+}
+
+.shop-now{
+   
+    top: 82%;
+   
+}
+
+
+
+.side-title{
+    
+    
+    
+    font-size: 130%;
+    padding-left: 20px;
+}
+}
+
+/************
+5. 1024px
+************/
+
+@media only screen and (max-width: 1024px)
+{
+	
+}
+
+/************
+6. 991px
+************/
+
+@media only screen and (max-width: 991px)
+{
+    
+/* NAVBAR STYLE  */
+
+.navbar{
+    background-color:#fff; 
+    
+  }
+  .dropdown-toggle{
+      margin: 0 auto;
+  }
+  .minicart-number {
+    right: 47%;
+}
+    
+	
+}
+
+/************
+7. 959px
+************/
+
+@media only screen and (max-width: 959px)
+{
+	
+}
+
+/************
+8. 880px
+************/
+
+@media only screen and (max-width: 880px)
+{
+	
+}
+
+/************
+9. 768px
+************/
+
+@media only screen and (max-width: 768px)
+{
+
+    
+	/* CARASOUL  */
+    .carousel-item .main-title{
+   
+        font-size: 41px;
+       
+       
+        top: 32%;
+        left:17%;
+        line-height: 70px;
+        
+    }
+    
+    .carousel-item .main-title span {
+        
+        top: 70%;
+    }
+    
+    .product_name_salary{
+        
+        top: 67%;
+        left: 10%;
+        
+    }
+    .salary{
+        padding-right: 65px;
+      
+        font-size: 120%;
+        
+    }
+    
+    .shop-now{
+       position: absolute;
+        top: 79%;
+        left: 10%;
+    }
+    
+    .shop-now button{
+        
+        width: 110px;
+        height: 24px;
+       
+        
+       
+        
+        font-size: 12px;
+        
+        margin-top: 26px;
+    }
+    
+    .side-title{
+        
+      
+        
+        font-size: 120%;
+        padding-left: 5px;
+    }
+
+}
+
+/************
+10. 767px
+************/
+
+@media only screen and (max-width: 767px)
+{
+   
+/* SITE FOOTER STYLE  */
+.site-footer
+  {
+    padding-bottom:0
+  }
+  .contact-inner  {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+}
+
+/************
+11. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+		
+    /* CARASOUL  */
+		
+    .carousel-item .main-title{
+   
+        font-size: 28px;
+       
+       
+        top: 22%;
+        left:17%;
+        line-height: 60px;
+        
+    }
+    
+    .carousel-item .main-title span {
+        
+        top: 60%;
+    }
+    
+    .product_name_salary{
+        
+        top: 59%;
+        left: 10%;
+        
+    }
+    .salary{
+        padding-right: 65px;
+      
+        font-size: 120%;
+        
+    }
+    
+    .shop-now{
+       position: absolute;
+        top: 75%;
+        left: 10%;
+    }
+        /* WHATS NEW  */
+        .whats-new-desc{
+            font-size: 10px;
+            overflow-wrap: break-word;  
+        }
+    
+}
+
+/************
+11. 539px
+************/
+
+@media only screen and (max-width: 539px)
+{
+	
+}
+
+/************
+12. 480px
+************/
+
+@media only screen and (max-width: 480px)
+{
+	
+}
+
+/************
+13. 479px
+************/
+
+@media only screen and (max-width: 479px)
+{
+        /* CARASOUL  */
+   .carousel-item .main-title{
+   
+    font-size: 30px;
+   
+   
+    top: 22%;
+    left:12%;
+    line-height: 50px;
+    
+}
+
+.carousel-item .main-title span {
+    
+    top: 60%;
+}
+
+.product_name_salary{
+    
+    top: 59%;
+    left: 10%;
+    
+}
+.salary{
+    padding-right: 65px;
+  
+    font-size: 100%;
+    
+}
+
+.shop-now{
+   position: absolute;
+    top: 79%;
+    left: 10%;
+}
+
+
+
+.side-title{
+    
+  
+    
+    font-size: 110%;
+    padding-left: 5px;
+}
+    
+}
+
+/************
+14. 396px
+************/
+
+@media only screen and (max-width: 396px)
+{
+    /* CARASOUL  */
+	.carousel-item .main-title{
+  
+        font-size: 16px;
+        font-weight: 600;
+       
+        top: 22%;
+        left:17%;
+        line-height: 70px;
+        
+    }
+    
+    .carousel-item .main-title span {
+        
+        top: 30%;
+    }
+    
+    .product_name_salary{
+        
+        top: 59%;
+        left: 10%;
+       
+        border-left: 2px solid black;
+    }
+    .salary{
+        padding-right: 25px;
+        
+        font-size: 10px;
+        
+    }
+    
+    .shop-now{
+       position: absolute;
+        top: 73%;
+        left: 10%;
+    }
+    
+    .shop-now button{
+        
+       
+       
+        
+        
+        font-size: 10px;
+        
+       
+        margin-top: 26px;
+    }
+    
+    .side-title{
+        
+        
+        font-size: 60%;
+        padding-left: 5px;
+    }
+}

@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- FONT AWESOME  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <!-- FONTS  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet" />
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!-- owl carasoul  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- Header stylesheet  -->
+  <link rel="stylesheet" href="./css/header.css">
+  <!-- SHOP POP UP MENU  -->
+  <link rel="stylesheet" href="./css/shop-popup-menu.css">
+  <!-- CUSTOM STYLESHEET  -->
+  <link rel="stylesheet" href="./css/shop.css" />
+  <!-- RESPONSIVE STYLESHEET  -->
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <title>Shop</title>
+</head>
+
+<body>
+  <!-- HEADER SECTION  -->
+  <header class="header">
+    <!-- anoucment bar  -->
+    <div id="hellobar-bar" class="regular closable ">
+      <div class="hb-content-wrapper  container">
+        <div class="hb-text-wrapper">
+          <div class="hb-headline-text">
+            <p>Hi everyone</p>
+          </div>
+        </div>
+
+
+        <div class="hb-close-wrapper">
+          <a href="javascript:void(0);" class="icon-close">&#10006;</a>
+        </div>
+      </div>
+
+    </div>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-unique">
+      <a class="navbar-brand" href="#"><img class="logo" src="./assets/logo-sizes/marshelles-1024.png"
+          alt="website-logo" />
+        <span class="logo-sec">MARSHELLE'S</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3"
+        aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link middle-links active" href="./index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link middle-links" href="./shop.html">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link middle-links" href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link middle-links" href="#">Kids</a>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons dropdown-ul">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"><img src="./assets/img/flag.svg" alt="" />
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"><img class="img-fluid select-lang-img" src="./assets/img/flag.svg"
+                  alt="" /></a>
+              <a class="dropdown-item" href="#"><img class="img-fluid select-lang-img" src="./assets/img/egypt.svg"
+                  alt="" /></a>
+              <a class="dropdown-item" href="#"><img class="img-fluid select-lang-img"
+                  src="./assets/img/tobias-Flag-of-France.svg" alt="" /></a>
+            </div>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >£
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right dropdown-unique"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">£</a>
+                <a class="dropdown-item" href="#">$</a>
+              </div>
+            </li> -->
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light"><img src="./assets/icons/search.svg" class="search-icon"
+                alt="search">
+
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" onclick="openLoginModal();">
+              <img src="./assets/icons/user.svg" class="user-icon" alt="user"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <img class="heart-icon" src="./assets/icons/heart.svg" alt="wishlist">
+            </a>
+          </li>
+          <li>
+            <a class="nav-link waves-effect waves-light mini-cart" id="cart-button"><img class="shopping-bag-icon"
+                src="./assets/icons/shopping-bag.svg" alt="shopping cart">
+              <span class="minicart-number">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- LOGIN AND REGISTER FORM  -->
+    <div class="modal fade login" id="loginModal">
+      <div class="modal-dialog login animated">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+          </div>
+          <div class="modal-body">
+            <div class="box">
+              <div class="content">
+                <div class="login-icon">
+                  <span>
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+
+                <div class="error"></div>
+                <div class="form loginBox">
+                  <p class="desc-login">Create an account to expedite future checkouts, track order history & receive
+                    emails, discounts, & special offers</p>
+                  <form method="" class="login" action="" accept-charset="UTF-8">
+                    <input id="email-login" class="form-control" type="text" placeholder="Email" name="email">
+                    <input id="password-login" class="form-control" type="password" placeholder="Password"
+                      name="password">
+                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="content registerBox" style="display:none;">
+                <div class="form">
+                  <p class="desc-register">Your personal data will be used to support your experience throughout this
+                    website, to manage access to your account, and for other purposes described in our privacy policy.
+                  </p>
+                  <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                    <input id="email-reg" class="form-control" type="text" placeholder="Email" name="email">
+                    <input id="password-reg" class="form-control" type="password" placeholder="Password"
+                      name="password">
+                    <input id="password-confirmation" class="form-control" type="password" placeholder="Repeat Password"
+                      name="password_confirmation">
+                    <input class="btn btn-default btn-register" type="button" value="Register" name="commit">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="forgot login-footer">
+              <span>
+                Do not have an account? </span>
+              <a href="javascript: showRegisterForm();">Create now</a>
+
+            </div>
+            <div class="forgot register-footer" style="display:none">
+              <span>Already have an account?</span>
+              <a href="javascript: showLoginForm();">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF LOGIN AND REGISTER FORM  -->
+    <!-- OWL CARASOUL SECTION  -->
+    <div class="carousel-wrap container">
+      <div class="owl-carousel">
+        <div class="item">
+          <div class="category-img">
+            <img src="./assets/shop-page/cat31-138x138.jpg">
+          </div>
+          <h3 class="category-title">
+            <a href="">shop</a>
+          </h3>
+        </div>
+        <div class="item">
+          <div class="category-img">
+            <img src="./assets/shop-page/cat11-138x138.jpg">
+          </div>
+          <h3 class="category-title">
+            <a href="">shop</a>
+          </h3>
+        </div>
+        <div class="item">
+          <div class="category-img">
+            <img src="./assets/shop-page/cat41-138x138.jpg">
+          </div>
+          <h3 class="category-title">
+            <a href="">shop</a>
+          </h3>
+        </div>
+        <div class="item">
+          <div class="category-img">
+            <img src="./assets/shop-page/cat51-138x138.jpg">
+          </div>
+          <h3 class="category-title">
+            <a href="">Women</a>
+          </h3>
+        </div>
+        <div class="item">
+          <div class="category-img">
+            <img src="./assets/shop-page/cat31-138x138.jpg">
+          </div>
+          <h3 class="category-title">
+            <a href="">New arrivals</a>
+          </h3>
+        </div>
+        <div class="item">
+          <div class="category-img">
+            <img src="./assets/shop-page/cat31-138x138.jpg">
+          </div>
+          <h3 class="category-title">
+            <a href="">Men</a>
+          </h3>
+        </div>
+        <div class="item">
+          <div class="category-img">
+            <img src="./assets/shop-page/cat91-138x138.jpg">
+          </div>
+          <h3 class="category-title">
+            <a href="">Life Style</a>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END OF HEADER SECTION  -->
+  <!-- SHOP POP UP MENU  -->
+  <aside id="sidebar-cart">
+    <main>
+
+      <h2>Your Cart<span class="count">2</span></h2>
+      <ul class="products">
+        <li class="product">
+          <a href="#" class="product-link">
+            <span class="product-image">
+              <img src="./assets/img/products/shoes31-393x420.jpg" alt="Product Photo" />
+            </span>
+          </a>
+          <div class="product-details">
+            <a href="#" class="product-title">
+              <h3>Very Cool Product One</h3>
+            </a>
+            <span class="qty">
+
+              <span class="quantity-cart">x5</span>
+              <span class="color-cart"><label for="color-brown" class="customize-color"
+                  style="background-color: #987b6a"> </span>
+              <span class="size-cart">38</span>
+              <span class="price-cart">$16.00</span>
+            </span>
+          </div>
+
+          <a href="javascript:void(0);" class="remove-button"><span class="remove-icon">X</span></a>
+        </li>
+
+
+      </ul>
+      <div class="totals">
+        <div class="subtotal">
+          <span class="label">Subtotal:</span>
+          <span class="amount">$54.00</span>
+        </div>
+
+      </div>
+      <div class="action-buttons">
+        <a class="view-cart-button" href="#">Cart</a><a class="checkout-button" href="#">Checkout</a>
+      </div>
+    </main>
+  </aside>
+  <div id="sidebar-cart-curtain"></div>
+
+
+  <!-- PRODUCT SECTION  -->
+
+  <div class="products-section">
+    <h3 class="products-headtitle">Shop</h3>
+
+
+    <div class="container-fluid">
+      <div class="toolbar-products">
+
+        <div class="left-wrap dropdown mega-dropdown">
+
+          <a href="javascript:void(0)" id="show-filters" data-flip="false" class="filter-toggle-button dropdown-toggle"
+            role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-filter"></i>
+            Filter
+          </a>
+
+
+          <form action="" id="filter-form" class="product-filter  dropdown-menu " aria-labelledby="dropdownMenuLink">
+
+
+            <div class="row cs">
+              <div class="col-xs-6 col-12 col-md-3">
+                <h6><span class="product-filter_title">shop</span></h6>
+                <ul class="product-filter-links">
+               
+                  <input type="radio" id="Shoes" name="filter-links" value="Shoes">
+                  <label for="Shoes" class="filter-titles">Shoes</label>
+                  <input type="radio" id="Accessories" name="filter-links" value="Accessories">
+                  <label for="Accessories" class="filter-titles">Accessories</label>
+                  <input type="radio" id="Bags" name="filter-links" value="Bags">
+                  <label for="Bags" class="filter-titles">Bags</label>
+                  <input type="radio" id="Life style" name="filter-links" value="Life style">
+                  <label for="Life style" class="filter-titles">Life style</label>
+                  <input type="radio" id="Lookbook SS19" name="filter-links" value="Lookbook SS19">
+                  <label for="Lookbook SS19" class="filter-titles">Lookbook SS19</label>
+                  <input type="radio" id="Men" name="filter-links" value="Men">
+                  <label for="Men" class="filter-titles">Men</label>
+                  <input type="radio" id="New Arrivals" name="filter-links" value="New Arrivals">
+                  <label for="New Arrivals" class="filter-titles">New Arrivals</label>
+                  <input type="radio" id="New Collection" name="filter-links" value="New Collection">
+                  <label for="New Collection" class="filter-titles">New Collection</label>
+                  <input type="radio" id="Summer Sale" name="filter-links" value="Summer Sale">
+                  <label for="Summer Sale" class="filter-titles">Summer Sale</label>
+                  <input type="radio" id="Women" name="filter-links" value="Women">
+                  <label for="Women" class="filter-titles">Women</label>
+                  
+                </ul>
+              </div>
+
+              <div class="col-xs-6 col-12 col-md-3">
+                <h6><span class="product-filter_title">Color</span></h6>
+                <ul class="product-filter-colors">
+                  <input type="radio" name="radio-colors" id="color-none" />
+                  
+                  <label for="color-none" class="customize-color ss-none">
+                    
+                  </label>
+                  <input type="radio" name="radio-colors" id="color-orange" />
+                  <label for="color-orange" class="customize-color ss-36" style="background-color: #dd9933">
+                    
+                  </label>
+                  <input type="radio" name="radio-colors" id="color-purple" />
+                  <label for="color-purple" class="customize-color ss-37" style="background-color: #8224e3">
+                    
+                  </label>
+                  <input type="radio" name="radio-colors" id="color-black" />
+
+                  <label for="color-black" class="customize-color ss-38" style="background-color: #000">
+                    
+                   
+                  </label>
+                  <input type="radio" name="radio-colors" id="color-blue" />
+                  <label for="color-blue" class="customize-color ss-39" style="background-color: #4472a3">
+                    
+                  </label>
+                  <input type="radio" name="radio-colors" id="color-brown" />
+                  <label for="color-brown" class="customize-color ss-3xl" style="background-color: #987b6a">
+                   
+                  </label>
+                  <input type="radio" name="radio-colors" id="color-gray" />
+                  <label for="color-gray" class="customize-color ss-40" style="background-color: #878787">
+                    
+                  </label>
+                  <input type="radio" name="radio-colors" id="color-green" />
+                  <label for="color-green" class="customize-color ss-41" style="background-color: #7fab5c">
+                    
+                  </label>
+
+                </ul>
+              </div>
+
+              <div class="col-xs-6 col-12 col-md-3">
+                <h6><span class="product-filter_title">Size</span></h6>
+                <ul class="product-filter-sizes">
+
+                  <input type="radio" name="sizes" id="size-none" class="input-size" />
+                  <label for="size-none" class="product-size product-size-ft-none">
+                    <a class="size-link"><span class="size"> None</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-36" class="input-size" />
+                  <label for="size-36" class="product-size product-size-ft-36">
+                    <a class="size-link" id="s-36-link"><span class="size">36</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-37" class="input-size" />
+                  <label for="size-37" class="product-size product-size-ft-37">
+                    <a class="size-link" id="s-37-link"><span class="size">37</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-38" class="input-size" />
+                  <label for="size-38" class="product-size product-size-ft-38">
+                    <a class="size-link" id="s-38-link"><span class="size">38</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-39" class="input-size" />
+                  <label for="size-39" class="product-size product-size-ft-39">
+                    <a class="size-link" id="s-39-link"><span class="size">39</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-3xl" class="input-size" />
+                  <label for="size-3xl" class="product-size product-size-ft-3xl">
+                    <a class="size-link" id="s-3xl-link"><span class="size">3XL</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-40" class="input-size" />
+                  <label for="size-40" class="product-size product-size-ft-40">
+                    <a class="size-link" id="s-40-link"><span class="size">40</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-41" class="input-size" />
+                  <label for="size-41" class="product-size product-size-ft-41">
+                    <a class="size-link" id="s-41-link"><span class="size">41</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-42" class="input-size" />
+                  <label for="size-42" class="product-size product-size-ft-42">
+                    <a class="size-link" id="s-42-link"><span class="size">42</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-43" class="input-size" />
+                  <label for="size-43" class="product-size product-size-ft-43">
+                    <a class="size-link" id="s-43-link"><span class="size">43</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-44" class="input-size" />
+                  <label for="size-44" class="product-size product-size-ft-44">
+                    <a class="size-link" id="s-44-link"><span class="size">44</span></a>
+                  </label>
+                  <input type="radio" name="sizes" id="size-xs" class="input-size" />
+                  <label for="size-xs" class="product-size product-size-ft-xs">
+                    <a class="size-link" id="s-xs-link"><span class="size">XS</span></a>
+                  </label>
+
+
+                </ul>
+              </div>
+              <div class="col-xs-6 col-12 col-md-3">
+                <h6><span class="product-filter_title">Price</span></h6>
+
+                <div class="range-slider">
+
+                  <input value="12" min="12" max="50000" step="50" type="range">
+
+
+
+                  <input value="50000" min="12" max="50000" step="50" type="range">
+                  <span class="rangeValues"></span>
+                </div>
+                <button type="submit" class="add-filter-button" id="filterBtn">Filter</button>
+
+
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="right-wrap">
+          <div class="filter-ordering">
+            <form action="" method="GET" name="search" role="search">
+
+              <select name="search categories" id="sort" class="order-by">
+                <option selected>Popularity</option>
+                <option>Rating</option>
+                <option>Newness</option>
+                <option data-sort="asc" >Price: low</option>
+                <option data-sort="desc">Price: high</option>
+              </select>
+
+            </form>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+
+
+
+
+
+        <div  data-price="1" class="col-md-3 full-card" >
+          <div class="product-card">
+            <a href="./sub-product.html">
+              <img class="card-img-top" src="/assets/img/products/bag42-1-393x420.jpg" alt="C ard image cap">
+
+
+              <div class="hover-image-content">
+                <img class="card-img-top card-img-second" src="/assets/img/products/bag41-1-393x420.jpg"
+                  alt="Card image cap">
+
+                <div class="button-loop">
+
+
+
+
+                  <a class="wishlist not-wished " href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating-stars">
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+            </div>
+            <h3 class="product-title"><a href="./sub-product.html">Camo logo print cotton hoodie</a></h3>
+            <span class="price">
+              £1
+            </span>
+            <span class="old-price">£110</span>
+          </div>
+        </div>
+
+        
+
+
+        <div  data-price="2" class="col-md-3 full-card">
+          <div class="product-card">
+            <a href="./sub-product.html">
+              <img class="card-img-top" src="/assets/img/products/bag42-1-393x420.jpg" alt="Card image cap">
+
+
+              <div class="hover-image-content">
+                <img class="card-img-top card-img-second" src="/assets/img/products/bag41-1-393x420.jpg"
+                  alt="Card image cap">
+
+                <div class="button-loop">
+
+
+
+
+                  <a class="wishlist not-wished " href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating-stars">
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+            </div>
+            <h3 class="product-title"><a href="./sub-product.html">Camo logo print cotton hoodie</a></h3>
+            <span class="price">
+              £2
+            </span>
+            <span class="old-price">£110</span>
+          </div>
+        </div>
+        <div  data-price="3" class="col-md-3 full-card">
+          <div class="product-card">
+            <a href="./sub-product.html">
+              <img class="card-img-top" src="/assets/img/products/bag42-1-393x420.jpg" alt="Card image cap">
+
+
+              <div class="hover-image-content">
+                <img class="card-img-top card-img-second" src="/assets/img/products/bag41-1-393x420.jpg"
+                  alt="Card image cap">
+
+                <div class="button-loop">
+
+
+
+
+                  <a class="wishlist not-wished " href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating-stars">
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+            </div>
+            <h3 class="product-title"><a href="./sub-product.html">Camo logo print cotton hoodie</a></h3>
+            <span class="price">
+              £3
+            </span>
+            <span class="old-price">£110</span>
+          </div>
+        </div>
+        <div  data-price="4" class="col-md-3 full-card">
+          <div class="product-card">
+            <a href="./sub-product.html">
+              <img class="card-img-top" src="/assets/img/products/bag42-1-393x420.jpg" alt="Card image cap">
+
+
+              <div class="hover-image-content">
+                <img class="card-img-top card-img-second" src="/assets/img/products/bag41-1-393x420.jpg"
+                  alt="Card image cap">
+
+                <div class="button-loop">
+
+
+
+
+                  <a class="wishlist not-wished " href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating-stars">
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+            </div>
+            <h3 class="product-title"><a href="./sub-product.html">Camo logo print cotton hoodie</a></h3>
+            <span class="price">
+              £4
+            </span>
+            <span class="old-price">£110</span>
+
+
+          </div>
+        </div>
+
+        <div  data-price="5" class="col-md-3 full-card">
+          <div class="product-card">
+            <a href="./sub-product.html">
+              <img class="card-img-top" src="/assets/img/products/bag42-1-393x420.jpg" alt="Card image cap">
+
+
+              <div class="hover-image-content">
+                <img class="card-img-top card-img-second" src="/assets/img/products/bag41-1-393x420.jpg"
+                  alt="Card image cap">
+
+                <div class="button-loop">
+
+
+
+
+                  <a class="wishlist not-wished " href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating-stars">
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+            </div>
+            <h3 class="product-title"><a href="./sub-product.html">Camo logo print cotton hoodie</a></h3>
+            <span class="price">
+              £5
+            </span>
+            <span class="old-price">£110</span>
+          </div>
+        </div>
+        <div  data-price="6" class="col-md-3 full-card">
+          <div class="product-card">
+            <a href="./sub-product.html">
+              <img class="card-img-top" src="/assets/img/products/bag42-1-393x420.jpg" alt="Card image cap">
+
+
+              <div class="hover-image-content">
+                <img class="card-img-top card-img-second" src="/assets/img/products/bag41-1-393x420.jpg"
+                  alt="Card image cap">
+
+                <div class="button-loop">
+
+
+
+
+                  <a class="wishlist not-wished " href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating-stars">
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+            </div>
+            <h3 class="product-title"><a href="./sub-product.html">Camo logo print cotton hoodie</a></h3>
+            <span class="price">
+              £6
+            </span>
+            <span class="old-price">£110</span>
+          </div>
+        </div>
+        <div class="col-md-3 full-card" data-price="7">
+          <div class="product-card">
+            <a href="./sub-product.html">
+              <img class="card-img-top" src="/assets/img/products/bag42-1-393x420.jpg" alt="Card image cap">
+
+
+              <div class="hover-image-content">
+                <img class="card-img-top card-img-second" src="/assets/img/products/bag41-1-393x420.jpg"
+                  alt="Card image cap">
+
+                <div class="button-loop">
+
+
+
+
+                  <a class="wishlist not-wished " href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating-stars">
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+            </div>
+            <h3 class="product-title"><a href="./sub-product.html">Camo logo print cotton hoodie</a></h3>
+            <span class="price">
+              £7
+            </span>
+            <span class="old-price">£110</span>
+          </div>
+        </div>
+        <div class="col-md-3 full-card" data-price="8">
+          <div class="product-card">
+            <a href="./sub-product.html">
+              <img class="card-img-top" src="/assets/img/products/bag42-1-393x420.jpg" alt="Card image cap">
+
+
+              <div class="hover-image-content">
+                <img class="card-img-top card-img-second" src="/assets/img/products/bag41-1-393x420.jpg"
+                  alt="Card image cap">
+
+                <div class="button-loop">
+
+
+
+
+                  <a class="wishlist not-wished " href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating-stars">
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+            </div>
+            <h3 class="product-title"><a href="./sub-product.html">Camo logo print cotton hoodie</a></h3>
+            <span class="price">
+              £8
+            </span>
+            <span class="old-price">£110</span>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <a href="#" class="load-more"><i class="fas fa-redo-alt fa-lg load-more-icon"></i>Load More</a>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- END OF PRODUCT SECTION  -->
+
+  <!-- FOOTER SECTION  -->
+  <footer class="site-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <h6><span>shop</span></h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">Dresses</a></li>
+            <li><a href="http://scanfcode.com/contact/">Shirts &amp; Blouses</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Cardigans &amp; Sweaters</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Jeans</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Hoodies</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6><span>help</span></h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">FAQ</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">Returns &amp; Exchanges</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Care Guide</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6><span>contact</span></h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">help@shopnexio.com</a></li>
+            <li><a href="http://scanfcode.com/contact/">Phone: (646) 663-4575</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Fax: (646) 968-0608</a></li>
+            <div class="social-icons-footer">
+              <a class="twitter" href="http://scanfcode.com/privacy-policy/"><i class="fab fa-twitter"></i></a>
+              <a class="dribble" href="http://scanfcode.com/privacy-policy/"><i class="fas fa-basketball-ball"></i></a>
+              <a class="behance" href="http://scanfcode.com/privacy-policy/"><i class="fab fa-behance"></i></a>
+              <a class="instagram" href="http://scanfcode.com/privacy-policy/"><i class="fab fa-instagram"></i></a>
+            </div>
+
+
+
+
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6><span>newletters</span></h6>
+          <div class="newsletter-footer-desc">Get updates by subscribe our weekly newsletter</div>
+
+          <form class="newsletter-form-wrap">
+            <input type="email" class="input-email-footer" name="email" placeholder="Your email address">
+            <button type="submit" class="btn-submit-footer">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <p class="copyright-text">&copy;2019 Nexio. All rights reserved
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 bank-div">
+          <img class="bank-img" src="./assets/img/payment-dark.png">
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- END OF FOOTER SECTION  -->
+
+
+  <!-- BOOTSTRAP  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- SWAL ALERT  -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <!-- owl carasoul  -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

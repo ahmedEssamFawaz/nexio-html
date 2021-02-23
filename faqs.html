@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <!-- FONTS  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- owl carasoul  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Header stylesheet  -->
+    <link rel="stylesheet" href="./css/header.css" />
+    <!-- SHOP POP UP MENU  -->
+    <link rel="stylesheet" href="./css/shop-popup-menu.css" />
+    <!-- CUSTOM STYLESHEET  -->
+    <link rel="stylesheet" href="./css/faqs.css" />
+    <!-- RESPONSIVE STYLESHEET  -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>FAQs</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION  -->
+    <header class="header">
+       <!-- anoucment bar  -->
+       <div id="hellobar-bar" class="regular closable ">
+        <div class="hb-content-wrapper  container">
+            <div class="hb-text-wrapper">
+                <div class="hb-headline-text">
+                    <p>Hi everyone</p>
+                </div>
+            </div>
+            
+            
+            <div class="hb-close-wrapper">
+              <a href="javascript:void(0);" class="icon-close">&#10006;</a>
+          </div>
+        </div>
+       
+    </div>
+      <!--Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-unique">
+        <a class="navbar-brand" href="#"
+          ><img class="logo"
+            src="./assets/logo-sizes/marshelles-1024.png"
+            alt="website-logo"
+        />
+        <span class="logo-sec">MARSHELLE'S</span>
+      </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent-3"
+          aria-controls="navbarSupportedContent-3"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link middle-links active" href="./index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link middle-links" href="./shop.html">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link middle-links" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link middle-links" href="#">Kids</a>
+            </li>
+            
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons dropdown-ul">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><img src="./assets/img/flag.svg" alt="" />
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right dropdown-unique"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#"
+                  ><img
+                    class="img-fluid select-lang-img"
+                    src="./assets/img/flag.svg"
+                    alt=""
+                /></a>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    class="img-fluid select-lang-img"
+                    src="./assets/img/egypt.svg"
+                    alt=""
+                /></a>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    class="img-fluid select-lang-img"
+                    src="./assets/img/tobias-Flag-of-France.svg"
+                    alt=""
+                /></a>
+              </div>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >£
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right dropdown-unique"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">£</a>
+                <a class="dropdown-item" href="#">$</a>
+              </div>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light"
+                ><img src="./assets/icons/search.svg" class="search-icon" alt="search">
+                  
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link waves-effect waves-light"
+                onclick="openLoginModal();"
+              >
+                <img src="./assets/icons/user.svg" class="user-icon" alt="user"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <img class="heart-icon" src="./assets/icons/heart.svg" alt="wishlist">
+              </a>
+            </li>
+            <li>
+              <a class="nav-link waves-effect waves-light mini-cart" id="cart-button"
+                ><img class="shopping-bag-icon" src="./assets/icons/shopping-bag.svg" alt="shopping cart">
+                <span class="minicart-number">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- END OF HEADER SECTION  -->
+    <!-- SHOP POP UP MENU  -->
+    <aside id="sidebar-cart">
+      <main>
+       
+        <h2>Your Cart<span class="count">2</span></h2>
+        <ul class="products">
+          <li class="product">
+            <a href="#" class="product-link">
+              <span class="product-image">
+                <img
+                  src="./assets/img/products/shoes31-393x420.jpg"
+                  alt="Product Photo"
+                />
+              </span>
+            </a>
+              <div class="product-details">
+                <a href="#" class="product-title"><h3>Very Cool Product One</h3></a>
+                <span class="qty">
+                  
+                  <span class="quantity-cart">x5</span>
+                  <span class="color-cart"><label
+                    for="color-brown"
+                    class="customize-color"
+                    style="background-color: #987b6a"
+                  > </span>
+                  <span class="size-cart">38</span>
+                  <span class="price-cart">$16.00</span>
+                </span>
+              </div>
+            
+            <a href="javascript:void(0);" class="remove-button"
+              ><span class="remove-icon">X</span></a
+            >
+          </li>
+          <li class="product">
+            <a href="#" class="product-link">
+              <span class="product-image">
+                <img
+                  src="./assets/img/products/shoes31-393x420.jpg"
+                  alt="Product Photo"
+                />
+              </span>
+            </a>
+              <div class="product-details">
+                <a href="#" class="product-title"><h3>Veryy Cool Product One</h3></a>
+                <span class="qty">
+                  
+                  <span class="quantity-cart">x5</span>
+                  <span class="color-cart"><label
+                    for="color-brown"
+                    class="customize-color"
+                    style="background-color: #987b6a"
+                  > </span>
+                  <span class="size-cart">38</span>
+                  <span class="price-cart">$16.00</span>
+                </span>
+              </div>
+            
+            <a href="javascript:void(0);" class="remove-button"
+              ><span class="remove-icon">X</span></a
+            >
+          </li>
+          
+          
+        </ul>
+        <div class="totals">
+          <div class="subtotal">
+            <span class="label">Subtotal:</span>
+            <span class="amount">$54.00</span>
+          </div>
+          
+        </div>
+        <div class="action-buttons">
+          <a class="view-cart-button" href="#">Cart</a
+          ><a class="checkout-button" href="#">Checkout</a>
+        </div>
+      </main>
+    </aside>
+    <div id="sidebar-cart-curtain"></div>
+    <!-- LOGIN AND REGISTER FORM  -->
+    <div class="modal fade login" id="loginModal">
+      <div class="modal-dialog login animated">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="box">
+              <div class="content">
+                <div class="login-icon">
+                  <span>
+                    <i class="far fa-user"></i>
+                  </span>
+                </div>
+
+                <div class="error"></div>
+                <div class="form loginBox">
+                  <p class="desc-login">
+                    Create an account to expedite future checkouts, track order
+                    history & receive emails, discounts, & special offers
+                  </p>
+                  <form
+                    method=""
+                    class="login"
+                    action=""
+                    accept-charset="UTF-8"
+                  >
+                    <input
+                      id="email-login"
+                      class="form-control"
+                      type="text"
+                      placeholder="Email"
+                      name="email"
+                    />
+                    <input
+                      id="password-login"
+                      class="form-control"
+                      type="password"
+                      placeholder="Password"
+                      name="password"
+                    />
+                    <input
+                      class="btn btn-default btn-login"
+                      type="button"
+                      value="Login"
+                      onclick="loginAjax()"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="content registerBox" style="display: none">
+                <div class="form">
+                  <p class="desc-register">
+                    Your personal data will be used to support your experience
+                    throughout this website, to manage access to your account,
+                    and for other purposes described in our privacy policy.
+                  </p>
+                  <form
+                    method=""
+                    html="{:multipart=>true}"
+                    data-remote="true"
+                    action=""
+                    accept-charset="UTF-8"
+                  >
+                    <input
+                      id="email-reg"
+                      class="form-control"
+                      type="text"
+                      placeholder="Email"
+                      name="email"
+                    />
+                    <input
+                      id="password-reg"
+                      class="form-control"
+                      type="password"
+                      placeholder="Password"
+                      name="password"
+                    />
+                    <input
+                      id="password-confirmation"
+                      class="form-control"
+                      type="password"
+                      placeholder="Repeat Password"
+                      name="password_confirmation"
+                    />
+                    <input
+                      class="btn btn-default btn-register"
+                      type="button"
+                      value="Register"
+                      name="commit"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="forgot login-footer">
+              <span> Do not have an account? </span>
+              <a href="javascript: showRegisterForm();">Create now</a>
+            </div>
+            <div class="forgot register-footer" style="display: none">
+              <span>Already have an account?</span>
+              <a href="javascript: showLoginForm();">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF LOGIN AND REGISTER FORM  -->
+    <!-- HERO SECTION  -->
+    <div class="container-fluid hero-banner">
+      <div class="content-hero">
+        <div class="container">
+          <h1 class="hero-title">FAQs</h1>
+        </div>
+      </div>
+    </div>
+    <!-- END OF HERO SECTION  -->
+    <!-- FAQS SECTION  -->
+    <div class="container-fluid site-main col-12 col-md-11">
+      
+        
+          <div class="row">
+           
+           <div class="delivery-wrap col-sm-6">
+             <div class="wrapper">
+              <h2>01</h2>
+              <div class="content">
+                <div class="content-heading">
+                  <h4>
+                    <span class="head-title">Delivery</span>
+                    <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                  </h4>
+                  
+                </div>
+                <div class="content-body">
+                  <div class="info-wrapper">
+                    <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <h4>How long does it take for home delivery?</h4>
+                      <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                      <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                    </div>
+                    <div class="info-wrapper-content collapse" id="collapseOne" class="collapse show">
+                      <p>We currently offer 3 types of delivery service :standard delivery for GB Mainland in approximately 2-4 working days; Super Saver 48 Hour Delivery; Premium Next Day. More on our Delivery Services.</p>
+                    </div>
+                  </div>
+                  <div class="info-wrapper">
+                    <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <h4>Can i collect from a local store?</h4>
+                      <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                      <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                    </div>
+                    <div class="info-wrapper-content collapse" id="collapseTwo" class="collapse show">
+                      <p>We offer a reserve and collect service. This is available on the checkout page. Please be aware, if the product is not available in a local store, you are unable to reserve it.</p>
+                    </div>
+                  </div>
+                  <div class="info-wrapper">
+                    <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <h4>Do you deliver on Weekend?</h4>
+                      <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                      <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                    </div>
+                    <div class="info-wrapper-content collapse" id="collapseThree" class="collapse show">
+                      <p>No, our courier company do not offer the service to deliver on weekends currently.</p>
+                    </div>
+                  </div>
+                  <div class="info-wrapper">
+                    <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                      <h4>I paid $5.95 for delivery, why did i not get it next day?</h4>
+                      <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                      <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                    </div>
+                    <div class="info-wrapper-content collapse" id="collapsefour" class="collapse show">
+                      <p>Our $5.95 delivery charge is not for a next day service, it is a charge for a specialist courier company to deliver an oversized parcel.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+           </div>
+
+           <div class="payments-wrap col-sm-6">
+            <div class="wrapper">
+             <h2>02</h2>
+             <div class="content">
+               <div class="content-heading">
+                 <h4>
+                   <span class="head-title">Payments</span>
+                   <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                 </h4>
+                 
+               </div>
+               <div class="content-body">
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                     <h4>I'm new, how do i order?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapsefive" class="collapse show">
+                     <p>At Euro Car Parts we go to great lengths to ensure your shopping experience is as easy and secure as possible.Firstly you need to know your vehicle information, this can be your vehicle registration number or your make, model, version and year. Enter your vehicle registration number in the “ENTER YOUR NUMBER PLATE BELOW” section or select your vehicle.Our comprehensive catalogue system will look for the car parts for your section.Use the Search or the menus to navigate to the part you need. Once you have found a part, check the fitment information to confirm it is the correct part for your vehicle. If in doubt feel free to call our experienced customer service team on +44 (0) 203 788 7842.Once you have finished shopping simply go to the checkout, choose the method of shipping you would like and continue to payment. If you are happy with the order, confirm the payment and the item(s) will be dispatched to you.Alternatively, you can contact a member of our customer service team on +44 (0) 203 788 7842 to place a telephone order.</p>
+                   </div>
+                 </div>
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                     <h4>Which credit cards do you accept?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapsesix" class="collapse show">
+                     <p>We currently accept the following credit cards on www.eurocarparts.com, in our retail stores and on telephone orders – Mastercard, VISA, Switch/Maestro, Visa Debit, Delta and Electron.</p>
+                   </div>
+                 </div>
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                     <h4>Can i use a different payment method?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapseseven" class="collapse show">
+                     <p>Yes. You can use PayPal to pay for goods. We do not accept cheque or store cards.</p>
+                   </div>
+                 </div>
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                     <h4>Do your prices including vat?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapseeight" class="collapse show">
+                     <p>All our online prices include VAT.</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            </div>
+          </div>
+
+          <div class="order-wrap col-sm-6">
+            <div class="wrapper">
+             <h2>03</h2>
+             <div class="content">
+               <div class="content-heading">
+                 <h4>
+                   <span class="head-title">Your Order</span>
+                   <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                 </h4>
+                 
+               </div>
+               <div class="content-body">
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+                     <h4>Where is my order?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapsenine" class="collapse show">
+                     <p>Most of our deliveries are sent via UPS and we will send you an automated email with the tracking number of your order. You can also find the tracking number on your order in My Account</p>
+                   </div>
+                 </div>
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+                     <h4>How can i make a complaint?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapseten" class="collapse show">
+                     <p>In the rare occasion we make a mistake we are more than happy to take all customer feedback. There is always room for improvement. Contact Us</p>
+                   </div>
+                 </div>
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapseeleven" aria-expanded="false" aria-controls="collapseeleven">
+                     <h4>Can i have an update on my order status?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapseeleven" class="collapse show">
+                     <p>You can get an update on your order status by checking your order in your My Account section. You will need to [sign in] to access this area</p>
+                   </div>
+                 </div>
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapsetwelve" aria-expanded="false" aria-controls="collapsetwelve">
+                     <h4>Can i pay for a Click&Collect order online?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapsetwelve" class="collapse show">
+                     <p>No, currently we only offer the service to collect and pay in store.</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            </div>
+          </div>
+
+          <div class="refunds-wrap col-sm-6">
+            <div class="wrapper">
+             <h2>04</h2>
+             <div class="content">
+               <div class="content-heading">
+                 <h4>
+                   <span class="head-title">Refunds and Returns</span>
+                   <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                 </h4>
+                 
+               </div>
+               <div class="content-body">
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapsethirteen" aria-expanded="false" aria-controls="collapsethirteen">
+                     <h4>How do i return an item?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapsethirteen" class="collapse show">
+                     <p>For information on returning an item please Click Here.</p>
+                   </div>
+                 </div>
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapsefourteen" aria-expanded="false" aria-controls="collapsefourteen">
+                     <h4>Can you confirm you have received my return?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapsefourteen" class="collapse show">
+                     <p>We aim to process returns within 5-7 working days of receiving them. You will be notified by email once the return is complete.We suggest you make a note of the shipping reference given when you sent the item back. This will allow you to track your parcel at every stage of delivery, including when we receive it.Should you have any queries about your return, please feel free to contact our Customer Service team via email, or phone on +44 (0) 203 788 7842.</p>
+                   </div>
+                 </div>
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapsefifteen" aria-expanded="false" aria-controls="collapsefifteen">
+                     <h4>How do i make a complaint?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapsefifteen" class="collapse show">
+                     <p>If you are not happy about any service we offer or you have a general comment, feel free to write to us on custservice@eurocarparts.com.</p>
+                   </div>
+                 </div>
+                 <div class="info-wrapper">
+                   <div class="info-wrapper-title" data-toggle="collapse" data-target="#collapsesixteen" aria-expanded="false" aria-controls="collapsesixteen">
+                     <h4>What do i do if i have received a damaged item?</h4>
+                     <img src="./assets/icons/plus.svg" class="plus-icon" alt="plus icon">
+                     <img src="./assets/icons/remove.svg" class="minus-icon" alt="minus icon">
+                   </div>
+                   <div class="info-wrapper-content collapse" id="collapsesixteen" class="collapse show">
+                     <p>At Euro Car Parts we hope that you are happy with your purchases. We take great care in dispatching goods to the highest quality, however we know that sometimes things can go wrong and you will need to may need to return an item. Please follow the following procedure: We would require an image to be emailed to us providing all damage caused. Please email this to custservice@eurocarparts.com. Make sure you include your reference number, a copy of your invoice and an image of the parcel you received it in. More information on Returns & Refunds.</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            </div>
+          </div>
+          </div>
+        
+      
+    </div>
+    <!-- END OF FAQS SECTION  -->
+    <!-- FOOTER SECTION  -->
+    <footer class="site-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <h6><span>shop</span></h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">Dresses</a></li>
+              <li>
+                <a href="http://scanfcode.com/contact/">Shirts &amp; Blouses</a>
+              </li>
+              <li>
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  >Cardigans &amp; Sweaters</a
+                >
+              </li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Jeans</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Hoodies</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6><span>help</span></h6>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/category/c-language/"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/front-end-development/"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/back-end-development/"
+                  >Returns &amp; Exchanges</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://scanfcode.com/category/java-programming-language/"
+                  >Care Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6><span>contact</span></h6>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/about/">help@shopnexio.com</a>
+              </li>
+              <li>
+                <a href="http://scanfcode.com/contact/"
+                  >Phone: (646) 663-4575</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  >Fax: (646) 968-0608</a
+                >
+              </li>
+              <div class="social-icons-footer">
+                <a class="twitter" href="http://scanfcode.com/privacy-policy/"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="dribble" href="http://scanfcode.com/privacy-policy/"
+                  ><i class="fas fa-basketball-ball"></i
+                ></a>
+                <a class="behance" href="http://scanfcode.com/privacy-policy/"
+                  ><i class="fab fa-behance"></i
+                ></a>
+                <a class="instagram" href="http://scanfcode.com/privacy-policy/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6><span>newletters</span></h6>
+            <div class="newsletter-footer-desc">
+              Get updates by subscribe our weekly newsletter
+            </div>
+
+            <form class="newsletter-form-wrap">
+              <input
+                type="email"
+                class="input-email-footer"
+                name="email"
+                placeholder="Your email address"
+              />
+              <button type="submit" class="btn-submit-footer">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="copyright-text">&copy;2019 Nexio. All rights reserved</p>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 bank-div">
+            <img class="bank-img" src="./assets/img/payment-dark.png" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END OF FOOTER SECTION  -->
+    <!-- BOOTSTRAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- owl carasoul  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

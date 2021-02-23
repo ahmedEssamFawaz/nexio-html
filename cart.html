@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <!-- FONTS  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- owl carasoul  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Header stylesheet  -->
+    <link rel="stylesheet" href="./css/header.css" />
+    <!-- SHOP POP UP MENU  -->
+    <link rel="stylesheet" href="./css/shop-popup-menu.css" />
+    <!-- CUSTOM STYLESHEET  -->
+    <link rel="stylesheet" href="./css/cart.css" />
+    <!-- RESPONSIVE STYLESHEET  -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>cart</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION  -->
+    <header class="header">
+       <!-- anoucment bar  -->
+       <div id="hellobar-bar" class="regular closable ">
+        <div class="hb-content-wrapper  container">
+            <div class="hb-text-wrapper">
+                <div class="hb-headline-text">
+                    <p>Hi everyone</p>
+                </div>
+            </div>
+            
+            
+            <div class="hb-close-wrapper">
+              <a href="javascript:void(0);" class="icon-close">&#10006;</a>
+          </div>
+        </div>
+       
+    </div>
+      <!--Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-unique">
+        <a class="navbar-brand" href="#"
+          ><img class="logo"
+            src="./assets/logo-sizes/marshelles-1024.png"
+            alt="website-logo"
+        />
+        <span class="logo-sec">MARSHELLE'S</span>
+      </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent-3"
+          aria-controls="navbarSupportedContent-3"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link middle-links active" href="./index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link middle-links" href="./shop.html">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link middle-links" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link middle-links" href="#">Kids</a>
+            </li>
+            
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons dropdown-ul">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><img src="./assets/img/flag.svg" alt="" />
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right dropdown-unique"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#"
+                  ><img
+                    class="img-fluid select-lang-img"
+                    src="./assets/img/flag.svg"
+                    alt=""
+                /></a>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    class="img-fluid select-lang-img"
+                    src="./assets/img/egypt.svg"
+                    alt=""
+                /></a>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    class="img-fluid select-lang-img"
+                    src="./assets/img/tobias-Flag-of-France.svg"
+                    alt=""
+                /></a>
+              </div>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >£
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right dropdown-unique"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">£</a>
+                <a class="dropdown-item" href="#">$</a>
+              </div>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light"
+                ><img src="./assets/icons/search.svg" class="search-icon" alt="search">
+                  
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link waves-effect waves-light"
+                onclick="openLoginModal();"
+              >
+                <img src="./assets/icons/user.svg" class="user-icon" alt="user"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <img class="heart-icon" src="./assets/icons/heart.svg" alt="wishlist">
+              </a>
+            </li>
+            <li>
+              <a class="nav-link waves-effect waves-light mini-cart" id="cart-button"
+                ><img class="shopping-bag-icon" src="./assets/icons/shopping-bag.svg" alt="shopping cart">
+                <span class="minicart-number">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- END OF HEADER SECTION  -->
+    <!-- SHOP POP UP MENU  -->
+    <aside id="sidebar-cart">
+      <main>
+       
+        <h2>Your Cart<span class="count">2</span></h2>
+        <ul class="products">
+          <li class="product">
+            <a href="#" class="product-link">
+              <span class="product-image">
+                <img
+                  src="./assets/img/products/shoes31-393x420.jpg"
+                  alt="Product Photo"
+                />
+              </span>
+            </a>
+              <div class="product-details">
+                <a href="#" class="product-title"><h3>Very Cool Product One</h3></a>
+                <span class="qty">
+                  
+                  <span class="quantity-cart">x5</span>
+                  <span class="color-cart"><label
+                    for="color-brown"
+                    class="customize-color"
+                    style="background-color: #987b6a"
+                  > </span>
+                  <span class="size-cart">38</span>
+                  <span class="price-cart">$16.00</span>
+                </span>
+              </div>
+            
+            <a href="javascript:void(0);" class="remove-button"
+              ><span class="remove-icon">X</span></a
+            >
+          </li>
+          <li class="product">
+            <a href="#" class="product-link">
+              <span class="product-image">
+                <img
+                  src="./assets/img/products/shoes31-393x420.jpg"
+                  alt="Product Photo"
+                />
+              </span>
+            </a>
+              <div class="product-details">
+                <a href="#" class="product-title"><h3>Veryy Cool Product One</h3></a>
+                <span class="qty">
+                  
+                  <span class="quantity-cart">x5</span>
+                  <span class="color-cart"><label
+                    for="color-brown"
+                    class="customize-color"
+                    style="background-color: #987b6a"
+                  > </span>
+                  <span class="size-cart">38</span>
+                  <span class="price-cart">$16.00</span>
+                </span>
+              </div>
+            
+            <a href="javascript:void(0);" class="remove-button"
+              ><span class="remove-icon">X</span></a
+            >
+          </li>
+          
+          
+        </ul>
+        <div class="totals">
+          <div class="subtotal">
+            <span class="label">Subtotal:</span>
+            <span class="amount">$54.00</span>
+          </div>
+          
+        </div>
+        <div class="action-buttons">
+          <a class="view-cart-button" href="#">Cart</a
+          ><a class="checkout-button" href="#">Checkout</a>
+        </div>
+      </main>
+    </aside>
+    <div id="sidebar-cart-curtain"></div>
+    <!-- LOGIN AND REGISTER FORM  -->
+    <div class="modal fade login" id="loginModal">
+      <div class="modal-dialog login animated">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="box">
+              <div class="content">
+                <div class="login-icon">
+                  <span>
+                    <i class="far fa-user"></i>
+                  </span>
+                </div>
+
+                <div class="error"></div>
+                <div class="form loginBox">
+                  <p class="desc-login">
+                    Create an account to expedite future checkouts, track order
+                    history & receive emails, discounts, & special offers
+                  </p>
+                  <form
+                    method=""
+                    class="login"
+                    action=""
+                    accept-charset="UTF-8"
+                  >
+                    <input
+                      id="email-login"
+                      class="form-control"
+                      type="text"
+                      placeholder="Email"
+                      name="email"
+                    />
+                    <input
+                      id="password-login"
+                      class="form-control"
+                      type="password"
+                      placeholder="Password"
+                      name="password"
+                    />
+                    <input
+                      class="btn btn-default btn-login"
+                      type="button"
+                      value="Login"
+                      onclick="loginAjax()"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="content registerBox" style="display: none">
+                <div class="form">
+                  <p class="desc-register">
+                    Your personal data will be used to support your experience
+                    throughout this website, to manage access to your account,
+                    and for other purposes described in our privacy policy.
+                  </p>
+                  <form
+                    method=""
+                    html="{:multipart=>true}"
+                    data-remote="true"
+                    action=""
+                    accept-charset="UTF-8"
+                  >
+                    <input
+                      id="email-reg"
+                      class="form-control"
+                      type="text"
+                      placeholder="Email"
+                      name="email"
+                    />
+                    <input
+                      id="password-reg"
+                      class="form-control"
+                      type="password"
+                      placeholder="Password"
+                      name="password"
+                    />
+                    <input
+                      id="password-confirmation"
+                      class="form-control"
+                      type="password"
+                      placeholder="Repeat Password"
+                      name="password_confirmation"
+                    />
+                    <input
+                      class="btn btn-default btn-register"
+                      type="button"
+                      value="Register"
+                      name="commit"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="forgot login-footer">
+              <span> Do not have an account? </span>
+              <a href="javascript: showRegisterForm();">Create now</a>
+            </div>
+            <div class="forgot register-footer" style="display: none">
+              <span>Already have an account?</span>
+              <a href="javascript: showLoginForm();">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF LOGIN AND REGISTER FORM  -->
+    <!-- HERO SECTION  -->
+    <div class="container-fluid hero-banner">
+      <div class="content-hero">
+        <div class="container">
+          <h1 class="hero-title">Cart</h1>
+        </div>
+      </div>
+    </div>
+    <!-- END OF HERO SECTION  -->
+    <!-- PRODUCT SECTION  -->
+    <div class="container-fluid">
+      <main class="site-main">
+        <div class="container">
+          <div class="row">
+            <div class="main-content col-sm-12">
+              <div class="page-main-content">
+                <form action="" class="cart-form table-responsive">
+                  <table class="table shop-table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="product-thumbnail">Product</th>
+                        <th scope="col" class="product-name"></th>
+                        <th scope="col" class="product-price">Price</th>
+                        <th scope="col" class="product-quantity">Quantity</th>
+                        <th scope="col" class="product-size">Size</th>
+                        <th scope="col" class="product-color">Color</th>
+                        
+
+                        <th scope="col" class="product-subtotal">Total</th>
+                        <th scope="col" class="product-remove"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="cart-item" id="cart-item-1">
+                      <th class="product-thumbnail" scope="row">
+                          <a href="#">
+                            <img
+                              src="./assets/img/products/shoes31-393x420.jpg"
+                              alt=""
+                            />
+                          </a>
+                        </th>
+                        <td class="product-name">
+                          <a href="#"> Black Gamin shoe</a>
+                        </td>
+                        <td class="product-price">
+                          <span class="price-product"> $78.70 </span>
+                        </td>
+                        <td class="product-quantity">
+                          <div class="product-count">
+                            <a
+                              class="button-count no-active quality-minus"
+                              disabled
+                              >-</a
+                            >
+                            <input
+                              type="text"
+                              readonly
+                              value="1"
+                              class="quantity-input"
+                            />
+                            <a class="button-count quality-plus">+</a>
+                          </div>
+                        </td>
+                        <td class="product-size"> 39</td>
+                        <td class="product-color">
+                          <label
+                                          for="color-brown"
+                                          class="product-color-label ss-3xl"
+                                          style="background-color: #987b6a"
+                                        >
+                                          <span class="product-filter-ft-brown"> </span>
+                                        </label>
+                        </td>
+                        <td class="product-total">
+                          <span class="price-total"> $78.70 </span>
+                        </td>
+                        <td class="product-remove">
+                          <a href="javascript:void(0);" class="remove">X</a>
+                        </td>
+                      </tr>
+                      <tr class="cart-item" id="cart-item-2">
+                        <th class="product-thumbnail" scope="row">
+                          <a href="#">
+                            <img
+                              src="./assets/img/products/shoes31-393x420.jpg"
+                              alt=""
+                            />
+                          </a>
+                        </th>
+                        <td class="product-name">
+                          <a href="#"> Black Gamin shoe</a>
+                        </td>
+                        <td class="product-price">
+                          <span class="price-product"> $78.70 </span>
+                        </td>
+                        <td class="product-quantity">
+                          <div class="product-count">
+                            <a
+                              class="button-count no-active quality-minus"
+                              disabled
+                              >-</a
+                            >
+                            <input
+                              type="text"
+                              readonly
+                              value="1"
+                              class="quantity-input"
+                            />
+                            <a class="button-count quality-plus">+</a>
+                          </div>
+                        </td>
+                        <td class="product-size"> 39</td>
+                        <td class="product-color">
+                          <label
+                                          for="color-brown"
+                                          class="product-color-label ss-3xl"
+                                          style="background-color: #987b6a"
+                                        >
+                                          <span class="product-filter-ft-brown"> </span>
+                                        </label>
+                        </td>
+                        <td class="product-total">
+                          <span class="price-total"> $78.70 </span>
+                        </td>
+                        <td class="product-remove">
+                          <a href="javascript:void(0);" class="remove">X</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                    
+                  </table>
+                  <!-- actions button  -->
+                  <div class="actions">
+                    <div class="actions-btn">
+                      <input
+                        type="submit"
+                        value="Update Cart"
+                        class="update-btn"
+                        disabled
+                        aria-disabled="true"
+                      />
+                      <a href="#" class="shopping-btn">Continue Shopping</a>
+                    </div>
+                  </div>
+                  <!-- Coupon section  -->
+                  <!-- <div class="coupon">
+                    <label for="coupon" class="coupon-label">Coupon</label>
+                    <input
+                      type="text"
+                      name="coupon-code"
+                      class="input-coupon"
+                      placeholder="Coupon code"
+                    />
+                    <div class="coupon-btn-div">
+                      <span class="correct-coupon">Correct Coupon</span>
+                      <span class="wrong-coupon">Wrong Coupon</span>
+                      <input
+                        type="submit"
+                        value="Apply coupon"
+                        class="apply-coupon-btn"
+                      />
+                    </div>
+                  </div> -->
+                </form>
+                <div class="cart-total-cont">
+                  <div class="cart-total">
+                    <h3>Cart Totals</h3>
+                    <table class="shop-table table-sub">
+                      <tbody>
+                        <tr>
+                          <th>Subtotal</th>
+                          <td>
+                            <span>$78.70</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Total</th>
+                          <td>
+                            <strong>
+                              <span>$78.70</span>
+                            </strong>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="checkout">
+                      <a href="./checkout.html" class="checkout-btn"> Proceed to checkout </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- END OF PRODUCT SECTION  -->
+
+    <!-- FOOTER SECTION  -->
+    <footer class="site-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <h6><span>shop</span></h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">Dresses</a></li>
+              <li>
+                <a href="http://scanfcode.com/contact/">Shirts &amp; Blouses</a>
+              </li>
+              <li>
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  >Cardigans &amp; Sweaters</a
+                >
+              </li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Jeans</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Hoodies</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6><span>help</span></h6>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/category/c-language/"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/front-end-development/"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/back-end-development/"
+                  >Returns &amp; Exchanges</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://scanfcode.com/category/java-programming-language/"
+                  >Care Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6><span>contact</span></h6>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/about/">help@shopnexio.com</a>
+              </li>
+              <li>
+                <a href="http://scanfcode.com/contact/"
+                  >Phone: (646) 663-4575</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  >Fax: (646) 968-0608</a
+                >
+              </li>
+              <div class="social-icons-footer">
+                <a class="twitter" href="http://scanfcode.com/privacy-policy/"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="dribble" href="http://scanfcode.com/privacy-policy/"
+                  ><i class="fas fa-basketball-ball"></i
+                ></a>
+                <a class="behance" href="http://scanfcode.com/privacy-policy/"
+                  ><i class="fab fa-behance"></i
+                ></a>
+                <a class="instagram" href="http://scanfcode.com/privacy-policy/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6><span>newletters</span></h6>
+            <div class="newsletter-footer-desc">
+              Get updates by subscribe our weekly newsletter
+            </div>
+
+            <form class="newsletter-form-wrap">
+              <input
+                type="email"
+                class="input-email-footer"
+                name="email"
+                placeholder="Your email address"
+              />
+              <button type="submit" class="btn-submit-footer">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="copyright-text">&copy;2019 Nexio. All rights reserved</p>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 bank-div">
+            <img class="bank-img" src="./assets/img/payment-dark.png" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END OF FOOTER SECTION  -->
+    <!-- BOOTSTRAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- owl carasoul  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
